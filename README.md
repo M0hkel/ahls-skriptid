@@ -1,10 +1,10 @@
-### ahls-skriptid
+# ahls-skriptid
 
 <details>
 
 <summary>Mis need on?</summary>
 
-## Tähelepanu!
+### Tähelepanu!
 
 Need on skriptid.
 
