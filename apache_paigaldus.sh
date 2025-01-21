@@ -15,6 +15,6 @@ if [ $APACHE2 -eq 0 ]; then
 # if apache is installed
 elif [ $APACHE2 -eq 1 ]; then
 	# shows apache2 status
-	echo -e "\napache2package has already been installed\n"
+	echo -e "\napache2 package has already been installed\n"
 	systemctl status apache2
 fi
