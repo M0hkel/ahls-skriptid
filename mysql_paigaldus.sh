@@ -19,6 +19,7 @@ fi
 if [ $MYSQL -eq 0 ]; then
 	# installs mysql-server
 	echo -e "\nInstalling package mysql-server\n"
+	apt install gnupg -y
 	wget https://dev.mysql.com/get/mysql-apt-config_0.8.33-1_all.deb
 	dpkg -i mysql-apt-config_0.8.33-1_all.deb
 	rm mysql-apt-config_0.8.33-1_all.deb
