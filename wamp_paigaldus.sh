@@ -31,5 +31,6 @@ WP=$(dpkg-query -W -f='${status}' wordpress 2>/dev/null | grep -c 'ok installed'
 
 # if package not installed runs auto install script
 if [ $WP -eq 0 ]; then
-	./mysql_paigaldus.sh
+	./andmebaas.sh
+	./wordpress_paigaldus.sh
 fi
