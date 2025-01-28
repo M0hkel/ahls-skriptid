@@ -24,4 +24,7 @@ if [ ! -e "/etc/wordpress/config-default.php" ]; then
 	sed -i "s/database_name_here/wordpress/g" /etc/wordpress/config-default.php
 	sed -i "s/username_here/wpuser/g" /etc/wordpress/config-default.php
 	sed -i "s/password_here/qwerty/g" /etc/wordpress/config-default.php
+	echo -e "\nconfig file created\n"
+else
+	echo -e "\nconfig file exists\n"
 fi
