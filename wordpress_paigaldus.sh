@@ -9,6 +9,7 @@ WP=$(dpkg-query -W -f='${status}' wordpress 2>/dev/null | grep -c 'ok installed'
 if [ $WP -eq 0 ]; then
 	# installs wordpress and shows status
 	echo -e "\nInstalling package wordpress\n"
+	apt install unzip -y
 	wget https://wordpress.org/latest.zip
 	unzip latest.zip -d /var/www/html/
 	rm latest.zip
