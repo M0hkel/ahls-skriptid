@@ -8,7 +8,7 @@ PHP=$(dpkg-query -W -f='${status}' php 2>/dev/null | grep -c 'ok installed')
 # if php is not installed
 if [ $PHP -eq 0 ]; then
 	# installs php and dependencies
-	echo -e "\nInstallingpackage php libapache2-mod-php php-mysql\n"
+	echo -e "\nInstalling package php libapache2-mod-php php-mysql\n"
 	apt install php libapache2-mod-php php-mysql -y
 	echo -e "\nphp package has been installed\n"
 # if php is installed
